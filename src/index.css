@@ -1,0 +1,66 @@
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: blue transparent;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  /* Hide the default file input */
+.file-input {
+  display: none;
+}
+
+/* Style the custom file upload button */
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-file-upload button {
+  width: 100%;
+  text-align: left;
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+/* Optional: Style the file input button on hover */
+.custom-file-upload button:hover {
+  background-color: #e2e6ea;
+}
+.Eye-button{
+  border: none !important;
+  background-color: #4e73df !important;
+    color: white !important;
+    border-radius: 5px !important;
+
+}
